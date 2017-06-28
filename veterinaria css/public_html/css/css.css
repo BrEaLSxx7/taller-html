@@ -1,0 +1,164 @@
+.slider{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider ul{
+  padding: 0;
+  display: flex;
+  width: 300%;
+  animation: cambio 15s infinite;
+}
+.slider li{
+  width: 100%;
+  list-style: none;
+}
+.slider img{
+  width: 100%
+}
+@keyframes cambio{
+  0% {margin-left: 0;}
+  32% {margin-left: 0;}
+  
+  39% {margin-left: -100%;}
+  56% {margin-left: -100%;}
+  
+  68% {margin-left: -200%}
+  100% {marging-left-200%}
+  
+}
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+header{
+  width: 100%;
+  background: black;
+  margin: 0;
+  position: absolute;
+}
+#btn-menu{
+  display: none;
+}
+header label{
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-right: 1px solid #fff;
+}
+header label:hover{
+  cursor: pointer;
+  background: rgba(0,0,0,0.3);
+}
+.menu h1{
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+
+}
+.menu ul{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu li:hover{
+  background: white;
+  color: black;
+}
+.menu li a{
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width:768px){
+  header label{
+    display: block;
+  }
+  .menu{
+    position: absolute;
+    background: black;
+    width: 70%;
+    margin-left: -80%;
+    transition: all 0.5s;
+  }
+  .menu ul{
+    flex-direction: column;
+  }
+  menu li{
+    border-top: 1px solid #fff;
+  }
+  #btn-menu:checked ~ .menu{
+    margin: 0;
+  }
+  .divider div{ 
+        border: solid;
+        width: 90%; 
+        height: 100%;
+  }
+  
+  .clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+}
+
+
+.divider div {
+    
+    border: solid white;
+    margin: 40px;
+    float: left;
+}
+.divider div img{
+  border-radius: 50%;
+  width: 310px;
+  height: 310px;
+
+}
+
+.divider div h1{
+  text-align: center;
+}
+ .divider div p{
+  text-align:center;
+  text-decoration: none;
+  color: black;
+}
+.wrapper {
+    width: 40%;
+    margin: 0 5%;
+}
+.main {
+    padding: 30px 0;
+}
+.main article h1 {
+    font-size: 2em;
+}
+.footer{
+  background-color: black;
+  border: 5px solid black;
+}
+.footer footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.menu h1 a{
+  text-decoration: none;
+  color: white;
+}
